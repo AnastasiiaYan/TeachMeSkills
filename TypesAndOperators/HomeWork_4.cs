@@ -28,8 +28,7 @@ namespace TypesAndOperators
         }
         public static void IsOdd() //второй вариант решения задачи c swich
         {
-            Console.WriteLine("\n_____________________________\n");
-            Console.WriteLine("А это второй вариант программы.\n" +
+            Console.WriteLine("\nА это второй вариант программы.\n" +
            "Пожалуйста, введите число");
             double input = Convert.ToDouble(Console.ReadLine());
             switch (input % 2)
