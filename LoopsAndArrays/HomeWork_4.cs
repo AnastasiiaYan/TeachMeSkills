@@ -19,7 +19,7 @@ namespace LoopsAndArrays
         {
             Console.WriteLine("Данная программа выявит бОльшее cреднее арифметическое среди двух массивов:");
 
-            int[] firstarray = { 1, 2, 3, 5, 555 };
+            int[] firstarray = { 1, 2, 3, 5, 5595 };
             for (int i = 0; i < firstarray.Length; i++)
             {
                 Console.Write($"{firstarray[i]} ");
@@ -38,7 +38,7 @@ namespace LoopsAndArrays
 
             if (firstarray.Average() > secondarray.Average()) 
             {
-                Console.WriteLine($"\nСреднее арифметическое первого массива больше - {secondarray.Average()}");
+                Console.WriteLine($"\nСреднее арифметическое первого массива больше - {firstarray.Average()}");
             }
             else if  (firstarray.Average() < secondarray.Average())
             {
