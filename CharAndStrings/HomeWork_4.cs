@@ -18,25 +18,17 @@ namespace CharAndStrings
             // решение 1
             Console.WriteLine($"Данная программа ясные дни оставляет себе, а хмурые дни возвращает судьбе.");
             string originalDay = "Плохой день.";
-            string noBadDay = originalDay.Substring(6);
+            string badDay = "Плохой";
+            string noBadDay = originalDay.Substring(badDay.Length);
             string addGoodDay = noBadDay.Insert(0, "Хороший");
-            string gladGoodDay = addGoodDay.Insert(12, "!!!!!!!!!");
-            string isgladDay = gladGoodDay.Insert(21, "?");
+            string gladGoodDay = addGoodDay.Insert(addGoodDay.Length - 1, "!!!!!!!!!");
+            string isgladDay = gladGoodDay.Insert(gladGoodDay.Length - 1, "?");
 
             Console.WriteLine($"Исходный день: {originalDay}");
             Console.WriteLine($"Убираем плохой: {noBadDay}");
-            Console.WriteLine($"Добавляем хороший и радуемся: {gladGoodDay}");
+            Console.WriteLine($"Добавляем хороший и радуемся (точка в задании остается): {gladGoodDay}");
             Console.WriteLine($"Но есть сомнения: {isgladDay}");
 
-            // решение 2
-            string str = "Плохой день.";
-            string toDelite = "Плохой";
-            str = str.Substring(toDelite.Length);
-            string toAdd = "Хороший";
-            str = str.Insert(0, toAdd);
-            str = str.Insert(str.Length-1, "!!!!!!!!!");
-            str = str.Insert(str.Length-1, "?");
-            Console.WriteLine($"РЕШЕНИЕ 2: {str}");
         }
     }
 }
