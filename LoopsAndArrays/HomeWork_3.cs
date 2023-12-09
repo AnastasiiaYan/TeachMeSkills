@@ -35,6 +35,7 @@ namespace LoopsAndArrays
             int[] arrayСontent = CreateRandomArray(arraylength);
             Console.WriteLine($"Максимальное число массива - {arrayСontent.Max()}");
             Console.WriteLine($"Минимальное число массива - {arrayСontent.Min()}");
+            Console.WriteLine($"Среднее число массива - {arrayСontent.Average()}");
             Console.WriteLine("Весь массив:");
             for (int i = 0; i < arraylength; i++)
             {

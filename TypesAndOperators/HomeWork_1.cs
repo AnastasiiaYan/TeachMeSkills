@@ -33,6 +33,7 @@ namespace TypesAndOperators
             string operand = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Введите второе число: ");
             double b = Convert.ToDouble(Console.ReadLine());
+            
             switch (operand)
             {
                 case "+":
@@ -52,6 +53,7 @@ namespace TypesAndOperators
                     }
                 case "/":
                     {
+                        
                         if (b == 0)
                         {
                             Console.WriteLine("Упс, на ноль делить нельзя.");

@@ -44,11 +44,6 @@ namespace LoopsAndArrays
             {
                 Console.WriteLine($"Среднее арифметическое второго массива больше - {secondarray.Average()}");
             }
-            else if (firstarray.Average() == secondarray.Average())
-            {
-                Console.WriteLine($"Среднее арифметическое первого и второго массива одинаковые - {secondarray.Average()}");
-            }
-
         }
     }
 }

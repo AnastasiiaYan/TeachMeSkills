@@ -71,7 +71,6 @@ namespace TypesAndOperators
                         break;
                     }
 
-
                 default:
                     {
                         Console.WriteLine("К сожалению, в данном словаре пока нет такого слова :( \nПопробуйте перевести что-то другое. ");
@@ -80,6 +79,4 @@ namespace TypesAndOperators
             }
         }
     }
-}
-
-          
+}          

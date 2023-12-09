@@ -11,6 +11,7 @@ namespace TypesAndOperators
             IsEven(); //первый вариант решения задачи с if/else
             IsOdd(); //второй вариант решения задачи c swich
         }
+
         public static void IsEven() //первый вариант решения задачи с if/else
         {
             Console.WriteLine("Данная программа проверит является ли введенное число четным.\n" +
@@ -26,6 +27,7 @@ namespace TypesAndOperators
                 Console.WriteLine("Число нечетное");
             }
         }
+
         public static void IsOdd() //второй вариант решения задачи c swich
         {
             Console.WriteLine("\nА это второй вариант программы.\n" +
