@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-﻿/* Задание 2
+/* Задание 2
 Создать класс CreditCard c полями 
 номер счета, 
 текущая сумма на счету.
@@ -14,7 +13,7 @@
 Тестовый сценарий для проверки:
 Положите деньги на первые две карточки и снимите с третьей.
 Выведите на экран текущее состояние всех трех карточек.
-=======
+
 ﻿/* Задание 1:
 Создайте класс Phone, который содержит переменные number, model и weight.
 
@@ -36,8 +35,6 @@
 Выведите на консоль значения их переменных.
 Вызвать методы receiveCall и getNumber для каждого из объектов.
 Вызвать метод sendMessage с 2-мя и 5-ю номерами телефонов.
->>>>>>> 6c22c1acc402fae6cde981d55f79c202091160ae
-
 */
 
 
@@ -45,7 +42,6 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MethodAndClasses 
 { 
-<<<<<<< HEAD
     class Homework_2
     {        
         class CreditCard
@@ -60,8 +56,7 @@ namespace MethodAndClasses
 
             
                 
-            
-=======
+          
     class Homework_1
     {
         static void Main()
@@ -85,14 +80,9 @@ namespace MethodAndClasses
 
             phone1.sendMessage("111", "222");
             phone2.sendMessage("333", "444", "555", "666", "777");
->>>>>>> 6c22c1acc402fae6cde981d55f79c202091160ae
         }
     }
 }
-    
-<<<<<<< HEAD
-    
-=======
     //В C# можно создавать несколько классов в одном файле, классы должны быть частью одного пространства имен.
 
     class Phone
@@ -135,5 +125,3 @@ namespace MethodAndClasses
             }
         }
     }
->>>>>>> 6c22c1acc402fae6cde981d55f79c202091160ae
-
