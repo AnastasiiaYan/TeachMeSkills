@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypesAndOperators", "TypesAndOperators\TypesAndOperators.csproj", "{272DD020-CCAD-4730-A758-B46276841CC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypesAndOperators", "TypesAndOperators\TypesAndOperators.csproj", "{272DD020-CCAD-4730-A758-B46276841CC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsAndArrays", "LoopsAndArrays\LoopsAndArrays.csproj", "{0A72DC37-1CBE-44A7-991C-D5C40C96A1A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoopsAndArrays", "LoopsAndArrays\LoopsAndArrays.csproj", "{0A72DC37-1CBE-44A7-991C-D5C40C96A1A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharAndStrings", "CharAndStrings\CharAndStrings.csproj", "{568820E8-D8FE-458E-9280-A65FB60F05C8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsAndClasses", "MethodsAndClasses\MethodsAndClasses.csproj", "{89AE7DA1-CF2B-4616-B2A7-ECF6C49E8F00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharAndStrings", "CharAndStrings\CharAndStrings.csproj", "{568820E8-D8FE-458E-9280-A65FB60F05C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{568820E8-D8FE-458E-9280-A65FB60F05C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{568820E8-D8FE-458E-9280-A65FB60F05C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{568820E8-D8FE-458E-9280-A65FB60F05C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{89AE7DA1-CF2B-4616-B2A7-ECF6C49E8F00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89AE7DA1-CF2B-4616-B2A7-ECF6C49E8F00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89AE7DA1-CF2B-4616-B2A7-ECF6C49E8F00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89AE7DA1-CF2B-4616-B2A7-ECF6C49E8F00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
