@@ -27,11 +27,11 @@ namespace MethodsAndClasses_Task2
             new CreditCard("ЛС3",300)
            };
 
-            Console.WriteLine($"Введите сумму, необходимую зачислить на {cards[0].PersonalAccount}");
+            Console.WriteLine($"Введите сумму, необходимую зачислить на {cards[0].personalAccount}");
             cards[0].putMoney(Convert.ToDouble(Console.ReadLine()));
-            Console.WriteLine($"Введите сумму, необходимую зачислить на {cards[1].PersonalAccount}");
+            Console.WriteLine($"Введите сумму, необходимую зачислить на {cards[1].personalAccount}");
             cards[1].putMoney(Convert.ToDouble(Console.ReadLine()));
-            Console.WriteLine($"Введите сумму, которую требуется снять с {cards[2].PersonalAccount}");
+            Console.WriteLine($"Введите сумму, которую требуется снять с {cards[2].personalAccount}");
             cards[2].takeMoney(Convert.ToDouble(Console.ReadLine()));
                         
             foreach (CreditCard card in cards)

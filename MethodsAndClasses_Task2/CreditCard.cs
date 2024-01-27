@@ -2,29 +2,28 @@
 {
     public class CreditCard
     {
-        public string PersonalAccount;
-        public double CurrentBalance;
+        internal  string personalAccount;
+        internal double currentBalance;
 
         public CreditCard(string PersonalAccountNumber, double PersonalAccountBalance)
         {
-            this.PersonalAccount = PersonalAccountNumber;
-            this.CurrentBalance = PersonalAccountBalance;
+            this.personalAccount = PersonalAccountNumber;
+            this.currentBalance = PersonalAccountBalance;
         }
 
         public void putMoney(double put) 
         {
-            CurrentBalance += put;
+            currentBalance += put;
         }
 
         public void takeMoney(double take)
         {
-            CurrentBalance -= take;
+            currentBalance -= take;
         }
 
         public void getInfo()
         {
-            Console.WriteLine($"Лицевой счет: {PersonalAccount}, текущий баланс: {CurrentBalance}");
+            Console.WriteLine($"Лицевой счет: {personalAccount}, текущий баланс: {currentBalance}");
         }
-
     }
 }
