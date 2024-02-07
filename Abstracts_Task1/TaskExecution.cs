@@ -33,6 +33,4 @@ internal class TaskExecution
 
         Console.WriteLine($"Cумма периметра и площади всех фигур в массиве:{sumOfPerimeter + sumOfArea}");
     }
-
-
 }
