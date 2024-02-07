@@ -2,10 +2,10 @@
 
 public class TreatmentPlan
 {
-    private int TreatmentPlanСode;
+    private int treatmentPlanСode;
 
     public TreatmentPlan(int treatmentPlan)
     {
-        this.TreatmentPlanСode = treatmentPlan;
+        this.treatmentPlanСode = treatmentPlan;
     }
 }
