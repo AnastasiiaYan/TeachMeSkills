@@ -30,7 +30,6 @@ namespace Abstract_Task2
         }
         public override bool CheckExpiration()
         {
-
             foreach (Product p in ProductList)
             {
                 if (!p.CheckExpiration()) return true;                
@@ -39,4 +38,3 @@ namespace Abstract_Task2
         }
     }
 }
-

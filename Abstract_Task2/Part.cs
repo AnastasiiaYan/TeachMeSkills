@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace Abstract_Task2
 {
-    internal class Part : BaseProduct
-    {
-        public string name { get; set; }
-        public double price { get; set; }
-        public int amount { get; set; }
-        public DateTime createDate { get; set; }
-        public DateTime expirationDate { get; set; }
-        public override void PrintInfo()
+    internal class Part : Product
+    {       
+        public int amount { get; set; }        
+        public Part(string name, double price, int amount, DateTime createDate, DateTime expirationDate) : base(name, price, createDate, expirationDate)
+        {            
+            this.amount = amount;            
+        }
+                public override void PrintInfo()
         {
             Console.WriteLine($"\nНазвание: {name}.\nЦена: {price}.\nКоличество шт: {amount}\nДата изготовления: {createDate}.\nГоден до: {expirationDate}");
+            
             if (!CheckExpiration())
             {
                 Console.WriteLine("Внимание!Срок годности партии данного товара истек!");

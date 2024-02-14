@@ -36,12 +36,17 @@ internal class TaskExecution
             p.CheckExpiration();                      
         }
 
-        Set setProduct = new Set("Breakfast", 500, new List<Product>()
+        Set setProduct = new Set("Breakfast", 299, new List<Product>()
         {
             new Product("Cake",250,DateTime.Now,DateTime.Now.AddDays(30)),
             new Product("Tea",99.90,DateTime.Now.AddDays(-30),DateTime.Now)
         });
         setProduct.PrintInfo();
         setProduct.CheckExpiration();
+
+        Part partProduct = new Part("Pudding", 210.90, 90, new DateTime(2024, 1, 31), new DateTime(2024, 2, 5));
+        partProduct.PrintInfo();
+        partProduct.CheckExpiration();
+
     }        
 }
