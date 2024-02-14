@@ -15,11 +15,11 @@ namespace Abstract_Task2
         public DateTime expirationDate { get; set; }
         public override void PrintInfo()
         {
-            Console.WriteLine($"Название: {name}");
-            Console.WriteLine($"Цена: {price}");
-            Console.WriteLine($"Количество шт: {amount}");
-            Console.WriteLine($"Дата производства: {createDate}");
-            Console.WriteLine($"Годен до: {expirationDate}");
+            Console.WriteLine($"\nНазвание: {name}.\nЦена: {price}.\nКоличество шт: {amount}\nДата изготовления: {createDate}.\nГоден до: {expirationDate}");
+            if (!CheckExpiration())
+            {
+                Console.WriteLine("Внимание!Срок годности партии данного товара истек!");
+            }            
         }
         public override bool CheckExpiration()
         {

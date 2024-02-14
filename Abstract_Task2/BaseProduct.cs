@@ -13,4 +13,3 @@ namespace Abstract_Task2
         public abstract bool CheckExpiration() ;
     }
 }
-

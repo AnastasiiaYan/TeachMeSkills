@@ -6,11 +6,14 @@
 
 Создать производные классы:
 Продукт (название, цена, дата производства, срок годности),
-Партия (название, цена, количество шт, дата производства, срок годности), Комплект (названия, цена, перечень продуктов) со своими методами вывода информации на экран, и определения соответствия сроку годности.
+Партия (название, цена, количество шт, дата производства, срок годности), 
+Комплект (названия, цена, перечень продуктов) со своими методами вывода информации на экран, и определения соответствия сроку годности.
 
 Создать базу (массив) из n товаров, вывести полную информацию из базы на экран, а также организовать поиск просроченного товара (на момент текущей даты).
 
 */
+
+using System.Collections.Generic;
 
 namespace Abstract_Task2;
 
@@ -21,20 +24,24 @@ internal class TaskExecution
         Product[] productDatabase =
         {
             new Product("Cake",250,DateTime.Now,DateTime.Now.AddDays(30)),
-            new Product("Cookie",99.90,DateTime.Now.AddDays(-30),DateTime.Now),
+            new Product("Tea",99.90,DateTime.Now.AddDays(-30),DateTime.Now),
             new Product("Pie", 590, DateTime.Now.AddDays(-1), DateTime.Now.AddDays(1)),
-            new Product("Cinnamon bun", 180, new DateTime(2024, 2, 1), new DateTime(2024, 2, 3)),
+            new Product("Coffe", 180, new DateTime(2024, 2, 1), new DateTime(2024, 2, 3)),
             new Product("Pudding", 210.90, new DateTime(2024, 1, 31), new DateTime(2024, 2, 5))
         };
-        
+                
         foreach (Product p in productDatabase)
         {
             p.PrintInfo();
-            p.CheckExpiration();
-            if (!p.CheckExpiration())
-            {
-                Console.WriteLine("Внимание!Срок годности данного товара истек!");
-            }            
+            p.CheckExpiration();                      
         }
+
+        Set setProduct = new Set("Breakfast", 500, new List<Product>()
+        {
+            new Product("Cake",250,DateTime.Now,DateTime.Now.AddDays(30)),
+            new Product("Tea",99.90,DateTime.Now.AddDays(-30),DateTime.Now)
+        });
+        setProduct.PrintInfo();
+        setProduct.CheckExpiration();
     }        
 }

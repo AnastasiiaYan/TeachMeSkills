@@ -26,6 +26,10 @@ namespace Abstract_Task2
         public override void PrintInfo()
         {
             Console.WriteLine($"\nНазвание: {name}.\nЦена: {price}.\nДата изготовления: {createDate}.\nГоден до: {expirationDate}");
+            if (!CheckExpiration())
+            {
+                Console.WriteLine("Внимание!Срок годности данного товара истек!");
+            }
         }
         public override bool CheckExpiration()
         {
