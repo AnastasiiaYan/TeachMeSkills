@@ -17,7 +17,7 @@ namespace Collections_Task1
             this.author = author;
             this.publicationYear = publicationYear;
         }
-        public override string ToString()
+        public string info()
         {
             return $"Название: {title}, Автор: {author}, Год издания: {publicationYear}";
         }

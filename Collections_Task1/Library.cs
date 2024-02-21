@@ -25,7 +25,7 @@ namespace Collections_Task1
             {
                 foreach (Book book in books)
                 {
-                    Console.WriteLine(book.ToString());
+                    Console.WriteLine(book.info());
                 }
             }                
         }
@@ -36,7 +36,7 @@ namespace Collections_Task1
             {
                 if (book.author == author)
                 {
-                    Console.WriteLine(book.ToString());
+                    Console.WriteLine(book.info());
                 }
             }
         }
