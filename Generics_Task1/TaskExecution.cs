@@ -9,6 +9,7 @@
 using Generics_Task1;
 using System.Drawing;
 
+namespace Generics_Task1;
 internal class TaskExecution
 {
     static void Main()
