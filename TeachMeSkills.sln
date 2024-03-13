@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Task1", "LINQ_Task1\LINQ_Task1.csproj", "{C8D39CF7-D6C3-43E8-8572-4A7ADDA1050C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Task2", "LINQ_Task2\LINQ_Task2.csproj", "{FCA078FC-D1C4-4343-9C91-54E740C335BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Task3", "LINQ_Task3\LINQ_Task3.csproj", "{BF6AD19B-9012-4BBC-90A5-CD1A0AFABCD5}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8D39CF7-D6C3-43E8-8572-4A7ADDA1050C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D39CF7-D6C3-43E8-8572-4A7ADDA1050C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D39CF7-D6C3-43E8-8572-4A7ADDA1050C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D39CF7-D6C3-43E8-8572-4A7ADDA1050C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA078FC-D1C4-4343-9C91-54E740C335BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA078FC-D1C4-4343-9C91-54E740C335BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA078FC-D1C4-4343-9C91-54E740C335BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA078FC-D1C4-4343-9C91-54E740C335BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6AD19B-9012-4BBC-90A5-CD1A0AFABCD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6AD19B-9012-4BBC-90A5-CD1A0AFABCD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6AD19B-9012-4BBC-90A5-CD1A0AFABCD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6AD19B-9012-4BBC-90A5-CD1A0AFABCD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
