@@ -7,19 +7,21 @@
 Реализовать вызов метода с помощью делегата. Метод возвращает случайное значение от 0 до 10.
 */
 
-namespace Delegates_Task1;
-internal class TaskExecution
+namespace Delegates_Task1
 {
-    public delegate int TaskDelegate();//делегаты должны быть объявлены на уровне класса
-
-    static void Main()
+    internal class TaskExecution
     {
-        TaskDelegate example = new TaskDelegate(RandomInt);
-        int solution = example();
-    }
+        public delegate int TaskDelegate();//делегаты должны быть объявлены на уровне класса
 
-    static int RandomInt()
-    {
-        return new Random().Next(0, 10);
+        static void Main()
+        {
+            TaskDelegate example = new TaskDelegate(RandomInt);
+            int solution = example();
+        }
+
+        static int RandomInt()
+        {
+            return new Random().Next(0, 10);
+        }
     }
 }

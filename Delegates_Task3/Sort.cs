@@ -25,13 +25,13 @@
             }
         }
 
-        private static int[] SortAscending(int[] array)
+        internal int[] SortAscending(int[] array)
         {
             Array.Sort(array);
             return array;
         }
 
-        private static int[] SortDescending(int[] array)
+        internal int[] SortDescending(int[] array)
         {
             Array.Sort(array);
             Array.Reverse(array);

@@ -8,7 +8,7 @@
 Основная программа выполняет сортировку случайно сгененированного массива на основании выбранного типа.
 */
 
-using Task103.Helper;
+using Helper;
 using static Delegates_Task3.Sort;
 
 namespace Delegates_Task3
@@ -19,13 +19,13 @@ namespace Delegates_Task3
         {
             Random random = new Random();
             int[] randomArray = Enumerable.Range(0, 10).Select(i => random.Next(100)).ToArray();
-            PrintHelper.PrintData(randomArray);
+            PrintHelper.PrintArray(randomArray);
 
             SortTypes sortType = SortTypes.SortAscend;
             Sort sort = new Sort();
             sortDelegate sortDelegate = sort.GetSortDelegate(sortType);
             int[] sortedArray = sortDelegate(randomArray);
-            PrintHelper.PrintData(sortedArray);
+            PrintHelper.PrintArray(sortedArray);
         }
     }
 }

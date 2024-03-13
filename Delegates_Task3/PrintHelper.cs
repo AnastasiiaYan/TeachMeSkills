@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Task103.Helper
+namespace Helper
 {
     internal static class PrintHelper
     {
-        public static void PrintData(int[] array)
+        public static void PrintArray(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
                 Console.Write($"{array[i]} ");
