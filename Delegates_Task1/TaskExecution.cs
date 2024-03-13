@@ -14,11 +14,11 @@ internal class TaskExecution
 
     static void Main()
     {
-        TaskDelegate method = new TaskDelegate(RandomNumber);
-        int randomNumber = method();
+        TaskDelegate example = new TaskDelegate(RandomInt);
+        int solution = example();
     }
 
-    static int RandomNumber()
+    static int RandomInt()
     {
         return new Random().Next(0, 10);
     }
