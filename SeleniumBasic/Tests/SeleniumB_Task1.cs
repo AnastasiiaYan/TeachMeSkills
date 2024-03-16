@@ -7,23 +7,15 @@
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 
-
 namespace SeleniumBasic.Tests
 {
     internal class SeleniumB_Task1 : BaseTest
-    {
-        [SetUp]
-        public void SetUp()
-        {
-            Driver.Navigate().GoToUrl("https://bymed.top/calc/%D1%81%D0%BA%D1%84-2148");
-            Thread.Sleep(1000);
-            Driver.SwitchTo().Frame(0);
-        }
-
+    {        
         [Test]
         public void ValidateSKF()
         {
-                        
+            Driver.Navigate().GoToUrl("https://bymed.top/calc/%D1%81%D0%BA%D1%84-2148");
+
             IWebElement ageInput = Driver.FindElement(By.Id("age"));
             ageInput.SendKeys("40");
 
