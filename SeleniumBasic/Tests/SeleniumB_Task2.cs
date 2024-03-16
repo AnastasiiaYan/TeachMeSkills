@@ -13,6 +13,8 @@ internal class SeleniumB_Task2 : BaseTest
     public void LaminateCalculate()
     {
         Driver.Navigate().GoToUrl("https://home-ex.ru/calculation/");
+        Thread.Sleep(1000);
+        Driver.SwitchTo().Frame(0);
 
         IWebElement lnRoomInput = Driver.FindElement(By.Id("ln_room_id"));
         lnRoomInput.Clear();
